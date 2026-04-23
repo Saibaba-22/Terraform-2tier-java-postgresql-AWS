@@ -1,0 +1,38 @@
+# ========================
+# Terraform
+# ========================
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# ========================
+# Java / Maven
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# ========================
+# IDE (VS Code / IntelliJ)
+# ========================
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# OS files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Secrets / Keys
+# ========================
+*.pem
+*.key
+.env
+*.env

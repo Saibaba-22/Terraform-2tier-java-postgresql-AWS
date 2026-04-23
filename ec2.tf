@@ -4,7 +4,7 @@ resource "aws_instance" "app" {
   instance_type          = "t3.small"
   subnet_id              = aws_subnet.app_subnet.id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
-  key_name               = "ec2-key"
+  key_name               = "AJAYKEY"
 
   tags = {
     Name = var.ec2_name
@@ -13,7 +13,7 @@ resource "aws_instance" "app" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("ec2-key.pem")
+    private_key = file("AJAYKEY.pem")
     host        = self.public_ip
   }
 
